@@ -25,7 +25,7 @@ module.exports = {
                     return [filteredData.yearMonth, filteredData.blsJobsCreated];;
                 });
 
-                console.log(JSON.stringify(transformedblsJobsCreated));
+                //                console.log(JSON.stringify(transformedblsJobsCreated));
                 res.json(transformedblsJobsCreated);
             });
     },
@@ -50,7 +50,7 @@ module.exports = {
                     return [filteredData.yearMonth, filteredData.blsUnemploymentRate];;
                 });
 
-                console.log(JSON.stringify(transformedUnemploymentRates));
+                //                console.log(JSON.stringify(transformedUnemploymentRates));
                 res.json(transformedUnemploymentRates);
             });
     }

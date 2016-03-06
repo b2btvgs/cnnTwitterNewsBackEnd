@@ -2,6 +2,7 @@ var qs = require('qs');
 var request = require('request');
 var jwt = require('jwt-simple');
 var moment = require('moment');
+var Twit = require('twit');
 
 
 module.exports = {

@@ -12,15 +12,15 @@ module.exports = {
         Gdp.find({})
             .sort('yearQuarter ASC')
             .exec(function (err, gdpRates) {
-                console.log("just in from Mongo: " +
-                    JSON.stringify(gdpRates));
+//                console.log("just in from Mongo: " +
+        //                    JSON.stringify(gdpRates));
                 var transformedGdpRates = [];
                 var transformedGdpRates = _.map(gdpRates, function (element) {
                     var filteredData = _.pick(element, 'yearQuarter', 'gdpPctChange');
                     return [filteredData.yearQuarter, filteredData.gdpPctChange];
                 });
 
-                console.log("Returned from Mongo: " + JSON.stringify(transformedGdpRates));
+//                console.log("Returned from Mongo: " + JSON.stringify(transformedGdpRates));
                 res.json(transformedGdpRates);
             });
     }

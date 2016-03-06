@@ -56,24 +56,19 @@ module.exports.connections = {
      * Run: npm install sails-mongo                                             *
      *                                                                          *
      ***************************************************************************/
-//    soEconomicMongoDB: {
-//        adapter: 'sails-mongo',
-//        url: process.env.DB_URL
-//    },
-
     //    soEconomicMongoDB: {
     //        adapter: 'sails-mongo',
-    //        host: 'localhost',
-    //        port: 27017,
-    //        user: '',
-    //        password: '',
-    //        database: 'soEconomicMongoDB'
+    //        url: process.env.DB_URL
     //    },
 
-        soEconomicMongoDB: {
-         adapter: 'sails-mongo',
-         url: 'mongodb://paulmccranie:Florida2013@ds051863.mongolab.com:51863/soeconomicsmongodb'
-     },
+    soEconomicMongoDB: {
+        adapter: 'sails-mongo',
+        host: 'localhost',
+        port: 27017,
+        user: '',
+        password: '',
+        database: 'soEconomicMongoDB'
+    },
 
     /***************************************************************************
      *                                                                          *

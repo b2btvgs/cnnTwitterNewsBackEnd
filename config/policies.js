@@ -50,7 +50,14 @@ module.exports.policies = {
     PortfolioController: {
         getPortfolioAccounts: ['jwtAuth'],
         getPortfolioWrappedArray: ['jwtAuth']
-    }
+    },
+    SankeyDataController: {
+        getSankeyData: ['jwtAuth'],
+        getSankeyDataById: ['jwtAuth']
+    },
+    TwitterSubjectController: {
+        getTwitterSubjects: ['jwtAuth']
+    },
 
     /***************************************************************************
      *                                                                          *
